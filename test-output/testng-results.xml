@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-26T18:55:04 IST" name="Suite" finished-at="2024-06-26T18:55:27 IST" duration-ms="23033">
+    <groups>
+    </groups>
+    <test started-at="2024-06-26T18:55:04 IST" name="Test" finished-at="2024-06-26T18:55:27 IST" duration-ms="23033">
+      <class name="testcases.RegisterTestCases">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.RegisterTestCases@2b71e916]" started-at="2024-06-26T18:55:14 IST" name="launchBrowser" finished-at="2024-06-26T18:55:20 IST" duration-ms="6137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="verifyRegisterationWithInBlankData()[pri:0, instance:testcases.RegisterTestCases@2b71e916]" started-at="2024-06-26T18:55:20 IST" name="verifyRegisterationWithInBlankData" finished-at="2024-06-26T18:55:23 IST" duration-ms="3418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterationWithInBlankData -->
+        <test-method signature="verifyRegisterationWithValidData()[pri:0, instance:testcases.RegisterTestCases@2b71e916]" started-at="2024-06-26T18:55:23 IST" name="verifyRegisterationWithValidData" finished-at="2024-06-26T18:55:27 IST" depends-on-methods="testcases.RegisterTestCases.verifyRegisterationWithInBlankData" duration-ms="3830" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [https://naveenautomationlabs.com/opencart/index.php?route=account/success] but found [https://naveenautomationlabs.com/opencart/index.php?route=account/register]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [https://naveenautomationlabs.com/opencart/index.php?route=account/success] but found [https://naveenautomationlabs.com/opencart/index.php?route=account/register]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at com.Resources.commonMethods.handleAssertions(commonMethods.java:18)
+at testcases.RegisterTestCases.verifyRegisterationWithValidData(RegisterTestCases.java:80)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterationWithValidData -->
+      </class> <!-- testcases.RegisterTestCases -->
+      <class name="testcases.LoignTestCases">
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:testcases.LoignTestCases@618b19ad]" started-at="2024-06-26T18:55:04 IST" name="launchBrowser" finished-at="2024-06-26T18:55:12 IST" duration-ms="8044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method signature="validLoginTest()[pri:0, instance:testcases.LoignTestCases@618b19ad]" started-at="2024-06-26T18:55:12 IST" name="validLoginTest" finished-at="2024-06-26T18:55:14 IST" duration-ms="1531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+      </class> <!-- testcases.LoignTestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
